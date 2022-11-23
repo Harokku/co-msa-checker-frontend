@@ -9,6 +9,7 @@
         <div class="field">
           <div class="control">
             <input
+                disabled
                 v-model="operator"
                 class="input is-info"
                 placeholder="Nominativo"/>
@@ -56,8 +57,9 @@ export default {
 
   data() {
     return {
+      id: JSON.parse(sessionStorage.getItem("user")).id,
       note: '',
-      operator: '',
+      operator: JSON.parse(sessionStorage.getItem("user")).username,
       deprecateOlder: false,
       posting: false,
     }
@@ -80,7 +82,7 @@ export default {
               body: JSON.stringify({
                 info_id: this.infoId,
                 note: this.note,
-                operator: this.operator,
+                operator: this.id,
               })
             }
         )

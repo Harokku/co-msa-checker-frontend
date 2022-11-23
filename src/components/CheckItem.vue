@@ -8,6 +8,7 @@
     </header>
     <div class="card-content has-text-centered">
       <div class="content">
+        <h3>{{item.operator}}</h3>
         {{ item.note }}
       </div>
       <DetailList v-if="showUpdate" :info-id="item.id"/>
