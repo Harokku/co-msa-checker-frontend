@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+
+<section class="hero is-primary is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                    <form action="" class="box">
+                        <div class="field">
+                            <label for="" class="label">Password</label>
+                            <div class="control has-icons-left">
+                                <input type="password" placeholder="*******" class="input" required>
+                                <span class="icon is-small is-left"><i class="fa fa-lock"></i></span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <button class="button is-success is-fullwidth">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="card">
+            <header class="card-header">
+                <div class="card-header-title is-justify-content-space-between">
+                    <p>22/12/2022 10:19</p>
+                </div>
+            </header>
+
+            <div class="card-content has-text-centered">
+                <form class="pt-4">
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Operatore</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-info" placeholder="Nominativo"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Nuova consegna</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <textarea class="textarea is-info"
+                                              placeholder="Descrizione consegna"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="is-centered has-addons">
+                        <button class="button is-success">Bassa</button>
+                        <button class="button is-warning">Normale</button>
+                        <button class="button is-danger">Alta</button>
+                    </div>
+
+                    <hr/>
+
+                    <div class="field is-grouped is-grouped-centered">
+                        <div class="control">
+                            <button class="button is-primary">Aggiungi consegna</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <br/>
+        <div class="card">
+            <header class="card-header">
+                <div class="card-header-title is-justify-content-space-between">
+                    <p>22/12/2022 10:19</p>
+                    <p class="tag is-warning">2 - Normal</p>
+                </div>
+            </header>
+            <div class="card-content has-text-centered">
+                <div class="content">
+                    Manca la ruota
+                </div>
+            </div>
+            <footer class="card-footer">
+                <a class="card-footer-item">Aggiornamenti</a>
+            </footer>
+        </div>
+        <br/>
+        <div class="card">
+            <header class="card-header">
+                <div class="card-header-title is-justify-content-space-between">
+                    <p>22/12/2022 10:19</p>
+                    <p class="tag is-warning">2 - Normal</p>
+                </div>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    Manca la ruota
+                </div>
+                <div class="message is-danger">
+                    <div class="message-header">
+                        22/12/2022 10:21 <small>s.crenna</small>
+                    </div>
+                    <div class="message-body">
+                        Cose
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="message-header">
+                        22/12/2022 10:30 <small>s.crenna</small>
+                    </div>
+                    <div class="message-body">
+                        Trovato
+                    </div>
+                </div>
+
+                <form class="pt-4">
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Operatore</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-info" placeholder="Nominativo"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Nuovo aggiornamento</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <textarea class="textarea is-info"
+                                              placeholder="Descrizione aggiornamento"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped is-grouped-centered">
+                        <div class="control">
+                            <button class="button is-outlined">Annulla i precedenti</button>
+                        </div>
+                        <div class="control">
+                            <button class="button is-primary">Salva aggiornamento</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <footer class="card-footer">
+                <button class="button is-primary is-inverted card-footer-item is-clickable">Aggiornamenti</button>
+            </footer>
+        </div>
+    </div>
+</section>
+</body>
+</html>
