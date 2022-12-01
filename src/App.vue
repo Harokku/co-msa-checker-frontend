@@ -9,7 +9,7 @@
     <div class="content has-text-centered">
       <router-link :to="{name: 'Scanner'}">Scanner</router-link>
       |
-      <router-link :to="{name: 'Check', params: {msaid: 'Luiggi'}}">Check</router-link>
+      <router-link :to="{name: 'Config'}">Config</router-link>
     </div>
   </div>
 </template>

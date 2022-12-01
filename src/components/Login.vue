@@ -56,7 +56,9 @@ export default {
         )
         const data = await response.json()
         sessionStorage.setItem("user", JSON.stringify(data.data))
-        this.$router.push({name: 'Check', params: {msaid: this.$route.query.requested}})
+        //this.$router.push({name: 'Check', params: {msaid: this.$route.query.requested}})
+        console.info(this.$route.query.requested)
+        this.$router.push(this.$route.query.requested)
       } catch (e) {
 
       }
