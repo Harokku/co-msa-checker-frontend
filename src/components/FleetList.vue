@@ -1,7 +1,8 @@
 <template>
   <section class="section">
-    <div class="container">
-      <msa-qr-code qr-value="123ddd" radio-code="123erd"/>
+    <div class="container" v-for="msa in fleet">
+      <msa-qr-code :qr-value="msa.id" :radio-code="msa.radiocode"/>
+      <br/>
     </div>
   </section>
 </template>

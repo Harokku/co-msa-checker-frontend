@@ -1,8 +1,8 @@
 <template>
   <div class="card">
     <div class="card-image">
-      <figure class="image is-4by3">
-        <qrcode-vue :value="qrValue" level="L" :margin="margin" :size="size"/>
+      <figure class="image is-5by3">
+        <qrcode-vue :value="fullPathFromId" level="L" :margin="margin" :size="size"/>
       </figure>
     </div>
     <div class="card-content">
@@ -26,8 +26,14 @@ export default {
 
   data() {
     return {
-      margin: 10,
+      margin: 3,
       size: 300
+    }
+  },
+
+  computed:{
+    fullPathFromId(){
+      return `${import.meta.env.VITE_FRONTEND}/check/${this.qrValue}`
     }
   },
 
